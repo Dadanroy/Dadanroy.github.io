@@ -64,12 +64,6 @@ ul li a{
 ul li a:hover{
     color: #ff7200;
 }
-
-.search{
-    width: 330px;
-    float: left;
-    margin-left: 270px;
-}
 ul li:hover .submenu {
     display: block;
 }
@@ -97,6 +91,14 @@ ul li:hover .submenu {
     color: #ff7200;
 }
 
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+ul li:hover .submenu {
+    display: block;
+}
 .srch{
     font-family: 'Times New Roman';
     width: 200px;
