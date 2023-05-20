@@ -38,7 +38,28 @@
     float: left;
     height: 70px;
 }
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+}
 
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu li a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    color: #ff7200;
+}
 ul{
     float: left;
     display: flex;
@@ -66,29 +87,6 @@ ul li a:hover{
 }
 ul li:hover .submenu {
     display: block;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    padding: 10px;
-}
-
-.submenu li {
-    margin: 5px 0;
-}
-
-.submenu li a {
-    color: #000;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.submenu li a:hover {
-    color: #ff7200;
 }
 
 .search{
