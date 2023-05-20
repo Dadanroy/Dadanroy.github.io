@@ -64,6 +64,14 @@ ul li a{
 ul li a:hover{
     color: #ff7200;
 }
+.submenu {
+    display: none; /* Menyembunyikan submenu secara default */
+}
+
+.menu li:hover .submenu {
+    display: block; /* Menampilkan submenu saat menu induk dihover */
+}
+
 
 .search{
     width: 330px;
