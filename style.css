@@ -1,0 +1,210 @@
+body {
+    background-image: url(2.jpg); /* Mengatur gambar latar belakang dengan file "2.jpg" */
+    background-position: center; /* Mengatur posisi latar belakang di tengah */
+    background-size: cover; /* Mengatur latar belakang menutupi seluruh area body */
+
+    height: 95vh; /* Mengatur tinggi body sebesar 95% dari tinggi viewport */
+    display: flex; /* Mengatur tampilan elemen-elemen dalam body sebagai flex */
+    backdrop-filter: blur(3px); /* Memberikan efek blur pada elemen dengan kekaburan sebesar 3px */
+    margin-top: 25px; /* Mengatur jarak margin atas sebesar 25px */
+    font-family: cursive; /* Mengatur jenis font menjadi cursive */
+}
+
+
+.topbar {
+    margin-left: 92px; /* Mengatur jarak margin kiri sebesar 92px */
+    width: 90%; /* Mengatur lebar sebesar 90% dari lebar parent element */
+    height: 80px; /* Mengatur tinggi sebesar 80px */
+
+    background: radial-gradient(rgba(255,255,255,0.6)); /* Mengatur latar belakang dengan efek gradien radial dan transparansi */
+    box-shadow: 0 0 10px rgba(0,0,0,0.6); /* Memberikan efek bayangan pada elemen dengan ukuran bayangan 0 0 10px dan warna bayangan rgba(0,0,0,0.6) */
+    border-radius: 20px; /* Mengatur sudut melengkung (border radius) sebesar 20px */
+    backdrop-filter: blur(3px); /* Memberikan efek blur pada elemen dengan kekaburan sebesar 3px */
+}
+
+nav{
+    display: flex;
+    padding: 12px 5%;
+}
+nav ul li {
+  position: relative;
+}
+
+nav ul li:hover .submenu {
+  display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: radial-gradient(rgba(255,255,255,0.6));
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.151);
+    padding: 10px;
+    z-index: 4;
+    width: 180px; /* Ubah lebar submenu sesuai kebutuhan */
+  }
+  
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.submenu li a {
+  color: #f33f09;
+  text-decoration: none;
+}
+
+.logo{
+    margin-top: 5px; /* Memberikan jarak atas sebesar 5 piksel antara elemen dengan elemen sebelumnya */
+    color: #fff; /* Mengatur warna teks menjadi putih */
+    font-size: 35px; /* Mengatur ukuran font menjadi 35 piksel */
+    float: left; /* Mengatur posisi elemen menjadi terapung ke kiri */
+    cursor: pointer; /* Mengubah penampilan kursor saat diarahkan ke elemen menjadi tanda panah, menunjukkan bahwa elemen ini dapat diklik */
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s ease;
+}
+
+nav ul li a:hover{
+    color: #fff;
+}
+
+.bars{
+    list-style: none; /* Menghilangkan tanda bullet pada elemen daftar */
+    margin: 10px; /* Memberikan jarak sebesar 10 piksel di sekitar elemen */
+    cursor: pointer; /* Mengubah penampilan kursor saat diarahkan ke elemen menjadi tanda panah, menunjukkan bahwa elemen ini dapat diklik */
+    color: #fff; /* Mengatur warna teks menjadi putih */
+    font-size: 20px; /* Mengatur ukuran font menjadi 20 piksel */
+    margin-left: 60px; /* Memberikan jarak kiri sebesar 60 piksel dari elemen sebelumnya */
+    margin-right: -20px; /* Menerapkan margin negatif sebesar -20 piksel untuk mengompensasi ruang tambahan pada elemen sebelah kanan */
+}
+
+
+.active{
+    color: #fff;
+}
+
+.main{
+    display: flex;
+    margin: 20px;
+}
+
+.content{
+    background-image: url(2.jpg); /* Mengatur gambar latar belakang */
+    background-position: center; /* Mengatur posisi latar belakang ke tengah */
+    background-size: cover; /* Mengatur ukuran latar belakang agar sesuai dengan konten */
+    width: 92%; /* Mengatur lebar konten sebesar 92% dari parent element */
+    height: 500px; /* Mengatur tinggi konten menjadi 500 piksel */
+    background: radial-gradient(rgba(255,255,255,0.6)); /* Mengatur latar belakang dalam bentuk gradien radial dengan warna putih transparan */
+    box-shadow: 0 0 10px rgba(0,0,0,0.6); /* Memberikan bayangan pada konten dengan efek blur */
+    padding-left: 52px; /* Memberikan jarak kiri sebesar 52 piksel dari isi konten */
+    margin-left: 80px; /* Memberikan jarak kiri sebesar 72 piksel dari elemen sebelumnya */
+    border-radius: 20px; /* Memberikan sudut melengkung pada konten dengan jari-jari sebesar 20 piksel */
+}
+
+.profile-picture {
+    float: right; /* atau float: left; */
+    margin-right: -40px;
+    margin-top: -200px; /* Atur nilai margin-top sesuai kebutuhan */
+    
+
+  }
+  
+h2{
+    font-size: 35px;
+    padding-top: 20px;
+}
+
+h4{
+    font-size: 20px;
+    color: #fff;
+}
+p{
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+button{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 6px 16px;
+    font-size: 18px;
+    color: #000;
+    background-color: #fff;
+    font-family: cursive;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+button:hover{
+    background-color: orange;
+}
+
+.icons{
+    margin-left: 35px;
+    width: 80px;
+    height: 500px;
+    background: radial-gradient(rgba(255,255,255,0.6));
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+}
+
+.social-icons ul li{
+    list-style: none; /* Menghilangkan bullet point pada daftar ikon */
+    margin-top: 55px; /* Memberikan jarak atas sebesar 55 piksel */
+    margin-left: -20px; /* Menggeser posisi ke kiri sebesar 16 piksel dari posisi semula */
+}
+
+.social-icons ul li i{
+    text-decoration: none; /* Menghilangkan dekorasi teks seperti garis bawah */
+    font-size: 20px; /* Mengatur ukuran font menjadi 20 piksel */
+    color: #fff; /* Mengatur warna ikon menjadi putih */
+    cursor: pointer; /* Menampilkan kursor saat diarahkan ke ikon */
+    padding: 8px 8px; /* Memberikan padding sebesar 8 piksel di bagian atas dan bawah, serta 8 piksel di bagian kiri dan kanan */
+    transition: 0.2s ease; /* Memberikan efek transisi dengan durasi 0.2 detik */
+    border-radius: 10px; /* Memberikan sudut melengkung pada ikon dengan jari-jari sebesar 10 piksel */
+}
+
+
+.social-icons ul li i:hover{
+    background-color: #fff;
+    color: #000;
+}
+@media (max-width: 768px) {
+    .topbar {
+      margin-left: 20px;
+      width: 90%;
+    }
+    
+    .content {
+      width: 90%;
+      margin-left: 20px;
+      padding-left: 20px;
+    }
+    
+    .icons {
+      display: none; /* Menghilangkan ikon pada layar kecil */
+    }
+    
+    /* Atur tata letak lainnya atau properti sesuai kebutuhan */
+  }
+  
