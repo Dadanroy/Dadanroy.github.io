@@ -145,26 +145,21 @@ button:hover {
 
 /* Responsiveness */
 @media only screen and (max-width: 768px) {
-    body {
-        align-items: center;
-    }
-
     .topbar {
-        margin: 0 10px;
-        width: auto;
+        margin: 0;
         padding: 10px;
-    }
-
-    nav {
-        padding: 0;
     }
 
     .logo {
         font-size: 25px;
     }
 
-    nav ul li {
-        margin-left: 10px;
+    nav ul {
+        display: none;
+    }
+
+    .bars {
+        display: block;
     }
 
     .main {
@@ -181,5 +176,15 @@ button:hover {
 
     .icons {
         display: none;
+    }
+
+    .nav-active ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-active ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 }
