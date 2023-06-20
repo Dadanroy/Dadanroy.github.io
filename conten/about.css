@@ -126,4 +126,46 @@ button:hover {
 .social-icons ul li {
     list-style: none;
     margin-top: 55px;
-    margin-left: -
+    margin-left: -16px;
+}
+
+.social-icons ul li i {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 8px;
+    transition: 0.2s ease;
+    border-radius: 8px;
+}
+
+.social-icons ul li i:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+    body {
+        align-items: center;
+    }
+
+    .topbar {
+        margin: 0 10px;
+        width: auto;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .content {
+        width: auto;
+        margin: 20px 10px;
+        padding-left: 0;
+    }
+
+    .icons {
+        display: none;
+    }
+}
